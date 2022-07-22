@@ -52,7 +52,7 @@ except:
 
 if tg_session:
   LOG.info("Session Mode - {tg_session}")
-app = Client(name="ANYTHING", api_id, api_hash, tg_session)
+  app = Client(name="ANYTHING", api_id, api_hash, tg_session)
 elif bot_token:
   LOG.info("Bot Mode")
   app = Client(":memory:", api_id, api_hash, bot_token=bot_token)
